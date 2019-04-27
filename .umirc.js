@@ -24,6 +24,7 @@ export default {
       },
     }],
   ],
+  disableCSSModules: true,
   targets: {
     ie: 9
   },
