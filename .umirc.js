@@ -10,7 +10,7 @@ export default {
         hmr: true
       },
       dynamicImport: {webpackChunkName: true},
-      title: '慧能源扬尘监控管理平台',
+      title: 'xxxx',
       dll: true,
       hd: false,
 
