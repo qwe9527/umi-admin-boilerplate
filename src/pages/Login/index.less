@@ -1,0 +1,43 @@
+@import "../../styles/app";
+
+.login {
+  position: relative;
+  background-color: #090d00;
+  .fullH();
+}
+
+#login-bg  {
+  .fullPos(fixed);
+  z-index: 1;
+}
+
+#login-bg canvas {
+  .fullPos();
+}
+
+.login-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 11;
+  padding: 30px 100px;
+  border: 1px solid rgba(201,201,201,.4);
+  background-color: rgba(255,255,255,.05);
+  border-radius: @border-radius-base;
+
+  .title {
+    font-size: 30px;
+    color: @text-color-light;
+  }
+}
+
+.login-logo {
+  display: block;
+  width: 100px;
+  .marginCenter();
+}
+
+.login-form {
+  max-width: 300px;
+}
