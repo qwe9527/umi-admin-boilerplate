@@ -1,0 +1,38 @@
+@import "../../styles/app";
+
+.sider {
+  width: @sider-width-base;
+  .fullH();
+  background: #222;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  .logo {
+    height: 55px;
+    padding: 14px 4px 0;
+  }
+
+  .logo-img {
+    .fullW();
+  }
+
+  .nav-item {
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 0 5px;
+    color: #a4adb5;
+  }
+
+  .navs {
+    .active {
+      .nav-item {
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/app";
+
+.header {
+  position: fixed;
+  left: 51px;
+  top: 0;
+  right: 0;
+  height: 55px;
+  background-color: @bg-color-base;
+  .border(bottom);
+  .boxSizing();
+  padding: 0 26px;
+
+  .right {
+    .fullH();
+
+    .alert {
+      margin: 4px 18px 0 0;
+    }
+  }
+
+  .left {
+    .title {
+      font-size: @font-size-md;
+      line-height: 52px;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+
+  .username {
+    margin: 0 16px 0 18px;
+  }
+
+  .nav {
+    margin-left: 121px;
+
+    .ant-menu-horizontal {
+      line-height: 53px;
+    }
+  }
+}
+
+.header-user {
+  padding-top: 8px;
+}

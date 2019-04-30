@@ -10,8 +10,9 @@ export default {
         hmr: true
       },
       dynamicImport: {webpackChunkName: true},
-      title: 'umi-admin-boilerplate',
+      title: '慧能源扬尘监控管理平台',
       dll: true,
+      hd: false,
 
       routes: {
         exclude: [

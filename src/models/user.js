@@ -2,10 +2,10 @@ import produce from 'immer';
 
 export default {
 
-  namespace: 'app',
+  namespace: 'user',
 
   state: {
-
+    isLogin: false
   },
 
   reducers: {
