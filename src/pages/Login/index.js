@@ -1,20 +1,16 @@
-/*
-*document: ./src/pages/Login/login.ejs
-* */
 
 import React, {Component} from 'react';
 import {connect} from 'dva';
 import './index.less';
 import logo from '../../assets/logo.png';
 import {Form, Icon, Input, Button} from 'antd';
+import $ from 'jquery';
+import motion from '../../utils/bgMotion.js';
 
 class Login extends Component {
   componentDidMount() {
     // 加载背景动画
-    import('../../utils/bgMotion.js')
-      .then(module => {
-        module.default(window.jQuery);
-      });
+    motion($);
   }
 
   handleSubmit = (e) => {

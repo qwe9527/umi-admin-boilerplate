@@ -1,0 +1,80 @@
+@import '../../styles/app';
+
+#AMap {
+  .fullH();
+}
+
+.aMap {
+  .fullH();
+  position: relative;
+}
+
+.aMap-tool {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  .loc {
+    .wEqualH(33px);
+    border-radius: @border-radius-base;
+    background-color: @bg-color-base;
+    cursor: pointer;
+    box-shadow: @box-shadow-deep;
+
+    .icon {
+      fill: @primary-color;
+      .wEqualH(17px);
+      padding: 8px;
+      box-sizing: content-box;
+    }
+  }
+
+  .scale {
+    width: 33px;
+    height: 73px;
+    margin-top: 16px;
+    padding: 0 2px;
+    background-color: @bg-color-base;
+    box-shadow: @box-shadow-deep;
+
+    div {
+      width: 24px;
+      height: 36px;
+      margin: 0 auto;
+      padding: 10px 0;
+      background: url(../../assets/scale.png) no-repeat;
+      cursor: pointer;
+    }
+
+    .in {
+      .border(bottom);
+      background-position: -3px 3px;
+    }
+
+    .out {
+      background-position: -3px -156px;
+    }
+  }
+}
+
+.aMap-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  box-shadow: @box-shadow-deep;
+
+  .result {
+    background-color: @bg-color-base;
+    padding: 8px 0;
+
+    .value {
+      line-height: 2;
+      padding-left: 11px;
+      font-size: 12px;
+      &:hover {
+        background-color: @bg-color-body;
+      }
+    }
+  }
+}

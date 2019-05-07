@@ -65,3 +65,27 @@ html, body, #root {
 .padding-t-20 {
   padding-top: 20px;
 }
+
+.card {
+  background-color: @bg-color-base;
+  padding: 14px 20px;
+  box-shadow: @box-shadow-card;
+  border-radius: @border-radius-base;
+
+  .card-sm {
+    padding: 0;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+  }
+}
+
+.card-title {
+  font-size: 20px;
+  color: @text-color-title;
+  margin-bottom: 10px;
+}
+
+.ant-spin-nested-loading, .ant-spin-container {
+  .fullH();
+}
