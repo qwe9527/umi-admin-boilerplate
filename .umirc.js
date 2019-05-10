@@ -33,6 +33,12 @@ export default {
   exportStatic: {
     dynamicRoot: true,
   },
+  copy: [
+    {
+      "from": "./src/assets/favicon.ico",
+      "to": "./"
+    }
+  ],
   // chainWebpack(config) {
   //   config.merge({
   //     plugin: {
