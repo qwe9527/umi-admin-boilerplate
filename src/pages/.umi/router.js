@@ -23,8 +23,8 @@ let routes = [
   component: () => import(/* webpackChunkName: "p__index" */'../index.js'),
   
 }),
-        "_title": "慧能源扬尘监控管理平台",
-        "_title_default": "慧能源扬尘监控管理平台"
+        "_title": "xxxx",
+        "_title_default": "xxxx"
       },
       {
         "path": "/",
@@ -34,8 +34,8 @@ let routes = [
   component: () => import(/* webpackChunkName: "p__index" */'../index.js'),
   
 }),
-        "_title": "慧能源扬尘监控管理平台",
-        "_title_default": "慧能源扬尘监控管理平台"
+        "_title": "xxxx",
+        "_title_default": "xxxx"
       },
       {
         "path": "/Login",
@@ -45,22 +45,50 @@ let routes = [
   component: () => import(/* webpackChunkName: "p__Login__index" */'../Login/index.js'),
   
 }),
-        "_title": "慧能源扬尘监控管理平台",
-        "_title_default": "慧能源扬尘监控管理平台"
+        "_title": "xxxx",
+        "_title_default": "xxxx"
       },
       {
-        "component": () => React.createElement(require('E:/work/work/code/web/dust-monitor/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false }),
-        "_title": "慧能源扬尘监控管理平台",
-        "_title_default": "慧能源扬尘监控管理平台"
+        "path": "/test",
+        "exact": true,
+        "component": _dvaDynamic({
+  app: window.g_app,
+models: () => [
+  import(/* webpackChunkName: 'p__test__models__test.js' */'E:/work/work/code/web/umi-admin-boilerplate/src/pages/test/models/test.js').then(m => { return { namespace: 'test',...m.default}})
+],
+  component: () => import(/* webpackChunkName: "p__test__index" */'../test/index.js'),
+  
+}),
+        "_title": "xxxx",
+        "_title_default": "xxxx"
+      },
+      {
+        "path": "/test/config",
+        "exact": true,
+        "component": _dvaDynamic({
+  app: window.g_app,
+models: () => [
+  import(/* webpackChunkName: 'p__test__models__test.js' */'E:/work/work/code/web/umi-admin-boilerplate/src/pages/test/models/test.js').then(m => { return { namespace: 'test',...m.default}})
+],
+  component: () => import(/* webpackChunkName: "p__test__config" */'../test/config.js'),
+  
+}),
+        "_title": "xxxx",
+        "_title_default": "xxxx"
+      },
+      {
+        "component": () => React.createElement(require('E:/work/work/code/web/umi-admin-boilerplate/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false }),
+        "_title": "xxxx",
+        "_title_default": "xxxx"
       }
     ],
-    "_title": "慧能源扬尘监控管理平台",
-    "_title_default": "慧能源扬尘监控管理平台"
+    "_title": "xxxx",
+    "_title_default": "xxxx"
   },
   {
-    "component": () => React.createElement(require('E:/work/work/code/web/dust-monitor/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false }),
-    "_title": "慧能源扬尘监控管理平台",
-    "_title_default": "慧能源扬尘监控管理平台"
+    "component": () => React.createElement(require('E:/work/work/code/web/umi-admin-boilerplate/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: false }),
+    "_title": "xxxx",
+    "_title_default": "xxxx"
   }
 ];
 window.g_routes = routes;

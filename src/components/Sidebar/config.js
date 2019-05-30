@@ -1,7 +1,12 @@
 export const navs = [
   {
     title: '首页',
-    icon: 'icon-home',
+    icon: 'iconhome',
     path: '/'
+  },
+  {
+    title: 'test',
+    icon: 'iconmonitor',
+    path: '/test'
   },
 ];

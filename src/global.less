@@ -87,6 +87,18 @@ html, body, #root {
   margin-bottom: 10px;
 }
 
-.ant-spin-nested-loading, .ant-spin-container {
-  .fullH();
+.title-label {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    line-height: 1;
+    top: 2px;
+    bottom: 1px;
+    left: -8px;
+    background-color: @primary-color;
+    width: 3px;
+    border-radius: 2px;
+  }
 }

@@ -1,11 +1,162 @@
 @import "../styles/app";
 
 .container {
+  font-weight: 500;
+  color: @text-color;
   position: relative;
   .fullH();
 
   .main-content {
     .fullH();
     margin-left: @sider-width-base;
+    padding-top: 65px;
+  }
+
+  .top-bar {
+    height: 46px;
+    margin-bottom: @card-gutter-base;
+    background-color: @bg-color-base;
+    box-shadow: @box-shadow-card;
+    padding: 0 20px;
+
+    .search-bar {
+      float: right;
+    }
+
+    .children {
+      padding-top: 7px;
+    }
+  }
+
+  .top-bar-info {
+    color: @heading-color;
+    font-size: @font-size-md;
+    padding-top: 10px;
+
+    span + span {
+      margin-left: 10px;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+
+  .ant-table-tbody > tr:nth-of-type(odd) {
+    background: #f4fbff;
+  }
+
+  .ant-table-tbody > tr:nth-of-type(even) {
+    background: #fff;
+  }
+
+  .ant-table-thead > tr > th {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-bottom: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .table-action > a + a {
+    margin-left: 4px;
+  }
+
+  .empty-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 40px;
+    background-color: #fff;
+    z-index: 100;
   }
 }
+
+.ant-form-item {
+  margin-bottom: 15px;
+
+  .item-default {
+    width: 100%;
+  }
+
+  .unit {
+    position: absolute;
+    right: -64px;
+    width: 60px;
+  }
+}
+
+.ant-form-item.ant-form-item-with-help {
+  margin-bottom: 2px;
+}
+
+.video-popup {
+  border-radius: @border-radius-base;
+  padding: 0;
+
+  cm-pp-close {
+    display: none;
+  }
+
+  cm-pp-head {
+    border-color: transparent;
+  }
+
+  cm-pp-body {
+    padding: 0;
+  }
+
+  &.video-time cm-pp-body {
+    font-size: 12px;
+    font-family: SimSun, 宋体, 新宋体, serif;
+  }
+
+  .env-info {
+    padding: 4px 6px;
+    color: #fff;
+
+    li + li {
+      margin-top: 2px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    .title {
+      width: 50px;
+    }
+  }
+
+  &.video-popup-transparent {
+    background-color: transparent;
+    border-color: transparent;
+
+    .video-icon {
+      width: 23px;
+      height: 23px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.ant-spin-nested-loading, .ant-spin-container {
+  .fullH();
+  .fullW();
+}
+
+.ant-modal-title {
+  text-align: center;
+}
+
+.video-spin .ant-spin-blur {
+  opacity: 1;
+}
+

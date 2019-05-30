@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   return (
     <div className='sider'>
-      <Tooltip title='智洋科技' placement="right">
+      <Tooltip title='xxxxxx' placement="right">
         <div className='logo'>
           <img className='logo-img' alt='logo' src={logo} />
         </div>
