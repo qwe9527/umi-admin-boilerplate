@@ -1,6 +1,6 @@
 import React from 'react';
 import {Modal, Table} from 'antd';
-import {filterDevice} from '../../utils/app';
+import {filterDevice} from '@/utils/app';
 import Footer from '@/components/Footer';
 
 const PageContent = (props) => {

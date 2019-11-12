@@ -1,12 +1,7 @@
 import React from 'react';
-import dynamic from 'umi/dynamic';
-import CodeLoadingComponent from '@/components/CodeLoadingComponent';
+import AsyncComponent from '@/components/AsyncComponent';
 
-const AsyncAdd = dynamic({
-  loader: () => import('@/components/Add'),
-  loading: CodeLoadingComponent,
-  delay: 300
-});
+const AsyncAdd = AsyncComponent('@/components/Add');
 
 export const columns = [
   {
